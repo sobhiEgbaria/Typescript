@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// interface use to define the structure of an object
+// interface use to define the structure of an object, this structure is the type
 interface Todo {
   id: number;
   title: string;
@@ -12,7 +12,7 @@ const fetchData = async () => {
 
   const res = await axios.get(URL);
 
-  const todo = res.data as Todo;
+  const todo = res.data as Todo; // the type of todo is TODO(the interface)
 
   print(todo.id, todo.title, todo.completed);
 };
