@@ -1,3 +1,4 @@
+import type { Place } from "../api/place";
 const LocationSearch = () => {
   return (
     <>
